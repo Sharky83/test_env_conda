@@ -1,12 +1,10 @@
-# environment.yml for conda
-name: audit-test
-channels:
-  - defaults
-  - conda-forge
+# requirements.yml for pip-audit testing
+# Only include one version per package to avoid conflicts
+
 dependencies:
-  - python=3.10
-  - requests=2.31.0
-  - flask=3.0.3
-  - pyjwt=2.8.0
-  # Add a known vulnerable package for testing
-  - insecure-package=0.1.0
+  - flask==0.5
+  - django==1.2
+  - cryptography==2.1.4
+  - urllib3==1.25.2
+  - jinja2==2.7.2
+  - insecure-package==0.1.0
